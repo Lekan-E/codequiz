@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Math Quiz!</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+    </head>
+
+    <body>
+        <header>
+            <button class="highscoreButton">View Highscore</button>
+
+            <div class="timer-text">Timer
+                <div class="timer-count">60</div>
+                <h3>seconds remaining</h3>   
+            </div>
+        </header>
+        
+        <main>
+            <section>
+                <div class = "mainPage">
+                    <h1>Math Quiz Challenge</h1>
+                    <h3>Try to answer the following code-related questions within 80seconds.
+                        Keep in mind that incorrect answers will penalize your score/time
+                        by ten seconds!
+                    </h2>
+                    <button type="button" class="btn btn-primary" id = "startButton">Start Quiz</button>
+                </div>
+            </section>
+
+            <section>
+                <div class = "questionPage">
+                    <h2>Attempt the following questions:</h2>
+                    <h3 id="question-title">Question Title</h3>
+                    <ul id="options">
+                        <li><button class="btn btn-primary btnClicked" id="0"></button></li>
+                        <li><button class="btn btn-primary btnClicked" id="1"></button></li>
+                        <li><button class="btn btn-primary btnClicked" id="2"></button></li>
+                        <li><button class="btn btn-primary btnClicked" id="3"></button></li>
+                    </ul>
+                </div>
+                <div id="stauts"></div>
+            </section>
+
+            <section>
+                <div class = "summaryPage">
+                    <h2>All done!</h2>
+                    <h2 class = "finalScore"></h2>
+                </div>
+                <form>
+                    <label>Enter initials:</label>
+                    <input type = "text" id="userInitial">
+                    <button class="btn btn-primary" id="submitInitials">Submit</button>
+                </form>
+            </section>
+
+            <section>
+                <div class="highScore">
+                    <h2>Highscores</h2>
+                    <ol id = "highScoresList"></ol>
+                    <button class = "btn btn-primary" id="restartButton">Restart the Quiz</button>
+                </div>
+            </section>
+    
+        </main>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="Assets/js/script.js"></script>
+    </body>
+</html>
